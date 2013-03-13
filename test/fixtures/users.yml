@@ -1,0 +1,24 @@
+jason:
+  profile_name: "jasonseifer"
+  email: "Jason@treehouse.com"
+  first_name: "Jason"
+  last_name: "Seifer" 
+  encrypted_password: "$2a$10$QWA5rdUCOjaq9PE4Aqt45uWCAEzmcXi66Xrjx/VwVQrYo729.uZW2"
+
+jim:
+  profile_name: "jimhoskins"
+  email: "Jim@treehouse.com"
+  first_name: "Jim"
+  last_name: "Hoskins"
+
+matt:
+  profile_name: "matthartwig"
+  email: "Matt@treehouse.com"
+  first_name: "Matt"
+  last_name: "Hartwig"  
+
+mike:
+  profile_name: "mikethefrog"
+  email: "Mike@treehouse.com"
+  first_name: "Mike"
+  last_name: "Thefrog"  

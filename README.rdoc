@@ -1,0 +1,82 @@
+
+FEED
+	Public
+	My Feed
+
+DEVISE
+	ADMIN
+		edit status *DONE*
+		edit album *DONE*
+		edit photo *DONE*
+		edit user *DONE*
+		ADMIN statistics page
+	ERROR MESSAGE HELPER
+		registration errors *DONE*
+	FORGOT PASSWORD
+		not set up correctly *DONE*
+		need to update re-direct link to proper url in production
+	ROUTING
+		after registration user redirected to New Album ???
+
+STYLING
+	
+STATUS	
+ 	Need to update the status_index view to prevent users from deleting other users posts *DONE*
+ 	Require JSON/AJAX when posting new status.  Don't need show page.
+ 		
+FRIENDS
+	Users can friend themselves *DONE*
+	Need to add JSON/AJAX *DONE*
+	Draper gem - edit.html.erb sub_message
+	Send email invite
+
+PROFILE
+	AVATAR
+		Use Uploader? 
+
+
+PHOTO
+	Commentable
+	Voting
+	Public / Private
+	Testing
+	Performance - cache on view all page
+	Default Name
+
+SEARCH
+	simple search
+
+SITE
+
+ROUTE
+	pretty links
+	
+EMAIL
+	SERVER
+		Use ActionMailer?
+		Send email as background task
+		config production action mailer
+	EMAIL BLOG
+		Set up initial email
+_________________________________________________________________________________
+
+Album **DISCONTINUED**
+	PICTURE
+		Album Picture 
+		Expandable Photos *DONE*
+		Must be logged in to view albums *DONE*
+		Should albums be scoped to users and their friends
+	UPLOAD
+		Verify file type
+		Verify file size
+		Verify file exists
+		cropping
+		converting photo format
+		automatically add name (filename) if none is inputted
+	TESTING
+		Many tests failing
+	VIEWS
+		Update with simple form (album & photo)
+	SEARCHABLE FILE STRUCTURE
+		See wiki
+

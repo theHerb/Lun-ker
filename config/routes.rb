@@ -31,7 +31,7 @@ Lunker::Application.routes.draw do
   resources :statuses
   get 'feed', to: "statuses#index", as: :feed
   get 'new', to: "statuses#new", as: :new
-  root to: 'statuses#index'
+  root to: 'home_page#index'
 
   get '/:id', to: 'profiles#show', as: 'profile'
   

@@ -36,7 +36,7 @@ PROFILE
 
 
 PHOTO
-	Commentable
+	Commentable *DONE*
 	Voting
 	Public / Private
 	Testing
@@ -53,7 +53,6 @@ ROUTE
 	
 EMAIL
 	SERVER
-		Use ActionMailer?
 		Send email as background task
 		config production action mailer
 	EMAIL BLOG

@@ -2,8 +2,6 @@ Lunker::Application.routes.draw do
 
   devise_for :admins
 
-  resources :photos
-
   get "profiles/show"
 
   as :user do
@@ -28,7 +26,15 @@ Lunker::Application.routes.draw do
     end
   end
   
-  resources :statuses
+  resources :photos do
+    resources :comments
+  end
+
+  
+  resources :statuses  do
+    resources :comments
+  end
+
   get 'feed', to: "statuses#index", as: :feed
   get 'new', to: "statuses#new", as: :new
   root to: 'home_page#index'

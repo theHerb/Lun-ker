@@ -17,11 +17,15 @@ class StatusesController < ApplicationController
   # GET /statuses/1.json
   def show
     @status = Status.find(params[:id])
-
+    @commentable = @status
+    @comments = @commentable.comments
+    @comment = Comment.new
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @status }
     end
+
   end
 
   # GET /statuses/new

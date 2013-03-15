@@ -10,9 +10,10 @@
 	<div class="navbar navbar-fixed-top">
   	<div class="navbar-inner">
       <div class = "container">
-  			 <a class="brand" href="<%= feed_path %>">Lunker App</a>
+  			 <a class="brand" href="<%= root_path %>">Lun-ker</a>
 
   			 	<ul class="nav">
+            <li><%= link_to "Home", root_path %></li>
   			 		<li><%= link_to "Statuses", feed_path %></li>
             <li><%= link_to "Photos", photos_path %></li>
   			 	</ul>

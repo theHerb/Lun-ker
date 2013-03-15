@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Grid-A-Licious</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta property="og:title" content="Grid-A-Licious" />
+        <meta property="og:type" content="product" />
+        <meta property="og:url" content="http://suprb.com/apps/gridalicious/" />
+        <meta property="og:image" content="http://suprb.com/apps/gridalicious/gridalicious.png" />
+        <meta property="og:site_name" content="Grid-A-Licious" />
+        <meta property="fb:admins" content="558797780" />
+        <!-- Le styles -->
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+        <!-- Le fav and touch icons -->
+        <link href="ico/favicon.ico" rel="shortcut icon">
+        <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+        <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+        <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+        <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+    </head>
+    <body>
+        <div id="resize_container">
+            <div id="resize">
+                <a class="browser button active" id="auto">Auto fit</a>
+                <a class="button ipad-port" id="ipadPortrait">iPad portrait</a>
+                <a class="button ipad-land" id="ipadLandscape">iPad landscape</a>
+                <a class="button iphone-port" id="iphonePortrait">iPhone portrait</a>
+                <a class="button iphone-land" id="iphoneLandscape">iPhone landscape</a>
+            </div>
+        </div>
+        <header>
+            <h1><br>Grid&mdash;A&mdash;Licious</h1>
+            <p class="lead">Making grids sexier on the net since &mdash;08.<br>Now
+                <em>fully</em>
+                responsive.</p>
+        </header>
+        <div id="device">
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="item">
+                <div>Dolor sit amet enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Wxercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Quis nostrud exercitation ullamco laboris no consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="item">
+                <div>Dolor sit amet enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Wxercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Quis nostrud exercitation ullamco laboris no consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="item">
+                <div>Dolor sit amet enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Wxercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Quis nostrud exercitation ullamco laboris no consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="item">
+                <div>Dolor sit amet enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Wxercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Quis nostrud exercitation ullamco laboris no consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="item">
+                <div>Dolor sit amet enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Wxercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Quis nostrud exercitation ullamco laboris no consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="item">
+                <div>Dolor sit amet enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Wxercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="item">
+                <div>Quis nostrud exercitation ullamco laboris no consequat.</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <span class="span3"></span>
+                <div class="span6" id="info">
+                    <div class="page-header">
+                        <h2>What is Grid-A-Licious?</h2>
+                    </div>
+                    <p>Back in mid 2008, I created a jQuery plugin. I named it
+                        <em>Grid-A-Licious</em>
+                        and described it as, "Divs are placed in chronological order with a special grid" because I had no clue how to explain it better. I used this script a lot and designed many sites with it during 2008. At first, people were very skeptic and confused on how to read the grid, and thought this kind of layout belonged in real papers. This reaction slowly faded away once the layout became more and more popular when different developers and designers started to create their own script's interpretation of the floating grid layout effect. Not saying it was based on my work or script, because there were a few others that brought a similar layout effect to our attention, but not necessarily distributed as a plugin.</p>
+                    <p>In Dec 2008, I decided to wrap the script into a Wordpress theme and release it as a christmas gift to the world. This gained quite a following and the theme was heavily used in 2009 and 2010. This got me really motivated and in 2010, I released a commercial version of the theme called "Grid-A-Licious 2". After only half a year, I was literally drowned in support tickets and questions on how to do this and how to do that, so I decided to stop selling the theme.</p>
+                    <p>Today this floating grid layout effect is heavily used around the net and there are tons of different variations of the script to download and use. Some more popular than the other, but all does a better job than Grid-A-Licious.</p>
+                    <p>So, why am I continuing developing this? After some quick research, I could not find what I was looking for in any of the existing plugins out there. None of them are responsive or adapts to different screens the way I want. I need the grid to be exact, fluid and float perfectly regardless of the screen size or device. This is exactly what "Grid-A-Licious 3" does.</p>
+                    <p>The plugin is totally rewritten and the biggest change since the previous versions of Grid-A-Licious (and other similar plugins) is that the items in the grid aren’t using absolute positioning any more. They’re all floating. This will help many of you who are struggling with the grid content overlapping each other while loading. Also, this will probably speed up things as well.</p>
+                    <p>If this is something you’ve been looking for, go ahead and download the plugin and use it. "But what happened to the Wordpress theme?" you may ask. I want to continue to release Grid-A-Licious as it once was - a simple jQuery plugin, not a theme.</p>
+                    <small style="display:block;text-align:right;color:#999">2012-10-13</small>
+                    <div class="page-header">
+                        <h2>Plugin options</h2>
+                    </div>
+                    <h3>width</h3>
+                    <span class="help-block">Default
+                        <code>225px</code></span>
+                    <pre class="prettyprint">$("#container").gridalicious({width: 225});</pre>
+                    <h3>gutter</h3>
+                    <span class="help-block">Default
+                        <code>20px</code></span>
+                    <pre class="prettyprint">$("#container").gridalicious({gutter: 20});</pre>
+                    <h3>selector</h3>
+                    <span class="help-block">Default
+                        <code>.item</code></span>
+                    <pre class="prettyprint">$("#container").gridalicious({selector: '.item'});</pre>
+                    <h3>animate</h3>
+                    <span class="help-block">Default
+                        <code>false</code></span>
+                    <pre class="prettyprint">$("#container").gridalicious({animate: false});</pre>
+                    <h3>animationOption</h3><span class="help-block">Default options below</span>
+<pre class="prettyprint">$("#container").gridalicious({
+  animate: true,
+  animationOptions: { […] }
+});</pre>
+                    <div class="ops">
+                        <h4 class="suboption">queue</h4>
+                        <dl class="dl-horizontal">
+                            <dt>Queued objects or not.</dt>
+                            <dd><span class="help-block">Default
+                                    <code>true</code></span>
+                            </dd>
+                        </dl>
+                        <h4 class="suboption">speed</h4>
+                        <dl class="dl-horizontal">
+                            <dt>A number of milliseconds to render each object (e.g. 200).</dt>
+                            <dd><span class="help-block">Default
+                                    <code>200</code></span>
+                            </dd>
+                        </dl>
+                        <h4>duration</h4>
+                        <dl class="dl-horizontal">
+                            <dt>A number of milliseconds to run the animation (e.g. 300).</dt>
+                            <dd><span class="help-block">Default
+                                    <code>300</code></span>
+                            </dd>
+                        </dl>
+                        <h4>effect</h4>
+                        <dl class="dl-horizontal">
+                            <dt>Built in effects. At the moment, there is only ’fadeInOnAppear’. More effects will be added.</dt>
+                            <dd><span class="help-block">Default
+                                    <code>'fadeInOnAppear'</code></span>
+                            </dd>
+                        </dl>
+                        <h4>complete</h4>
+                        <dl class="dl-horizontal">
+                            <dt>A function to be executed whenever the animation completes.</dt>
+                            <dd><span class="help-block">Default
+                                    <code>function()</code></span>
+                            </dd>
+                        </dl>
+                    </div>
+<pre class="prettyprint">$("#container").gridalicious({
+  animate: true,
+  animationOptions: {
+    queue: true,
+    speed: 200,
+    duration: 300,
+    effect: 'fadeInOnAppear',
+    complete: onComplete
+  }
+});</pre>
+                    <div class="page-header">
+                        <h2>Some examples</h2>
+                    </div>
+                    <div class="example">
+                        <h4>Example 01</h4>
+                        <p>This example uses a custom width and the default gutter
+                            <code>20px</code></p>
+                        <div id="example1">
+                            <div class="item">
+                                <div></div>
+                            </div>
+                            <div class="item">
+                                <div>Ut asdsade.</div>
+                            </div>
+                            <div class="item">
+                                <div>itur.</div>
+                            </div>
+                            <div class="item">
+                                <div>Dasdasmdhaj hajsdoat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Wxercquinsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Quisnsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Lorem odo consequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Ut enim
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div>Lorem ctetur.</div>
+                            </div>
+                            <div class="item">
+                                <div>Dolor snsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Wxeat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Quis at.</div>
+                            </div>
+                            <div class="item">
+                                <div>Lored do.</div>
+                            </div>
+                            <div class="item">
+                                <div>Ut t.</div>
+                            </div>
+                        </div>
+<pre class="prettyprint">$("#example1").gridalicious({
+  width: 50
+});</pre>
+                    </div>
+                    <div class="example">
+                        <h4>Example 02</h4>
+                        <p>This example uses custom width and gutter</p>
+                        <div class="example2" id="example2">
+                            <div class="item">
+                                <div></div>
+                            </div>
+                            <div class="item">
+                                <div>Ut asdsade.</div>
+                            </div>
+                            <div class="item">
+                                <div>itur.</div>
+                            </div>
+                            <div class="item">
+                                <div>Dasdasmdhaj hajsdoat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Wxercquinsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Quisnsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Lorem odo consequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Ut enim
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div>Lorem ctetur.</div>
+                            </div>
+                            <div class="item">
+                                <div>Dolor snsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Wxeat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Quis at.</div>
+                            </div>
+                            <div class="item">
+                                <div>Lored do.</div>
+                            </div>
+                            <div class="item">
+                                <div>Ut t.</div>
+                            </div>
+                        </div>
+<pre class="prettyprint">$("#example2").gridalicious({
+  gutter: 1,
+  width: 100
+});</pre>
+                    </div>
+                    <div class="example">
+                        <h4>Example 03</h4>
+                        <p>Prepending and appending items</p>
+                        <div id="controllers">
+                            <a class="controller-btn button btn" id="prepend">Prepend</a>
+                            <a class="controller-btn button btn" id="append">Append</a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="example3" id="example3">
+                            <div class="item">
+                                <div>itur.</div>
+                            </div>
+                            <div class="item">
+                                <div>Dasdasmdhaj hajsdoat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Wxercquinsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Quisnsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Lorem odo consequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Ut enim
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div>Lorem ctetur.</div>
+                            </div>
+                            <div class="item">
+                                <div>Dolor snsequat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Wxeat.</div>
+                            </div>
+                            <div class="item">
+                                <div>Quis at.</div>
+                            </div>
+                            <div class="item">
+                                <div>Lored do.</div>
+                            </div>
+                            <div class="item">
+                                <div>Ut t.</div>
+                            </div>
+                        </div>
+<pre class="prettyprint">$("#example3").gridalicious({
+  gutter: 1, 
+  width: 75, 
+  animate: true, 
+  animationOptions: { 
+    speed: 200, 
+    duration: 300, 
+    complete: 
+    onComplete
+    },
+});</pre>
+                        <p>Prepend and Append buttons</p>
+<pre class="prettyprint">$('#prepend').click(function(){
+  $("#example3").gridalicious('prepend', makeboxes());
+});
+  
+$('#append').click(function(){
+  $("#example3").gridalicious('append', makeboxes());
+});</pre>
+
+
+                        <div class="page-header">
+                            <h2>Like and share, please?</h2>
+                        </div>
+                        <div class="row">
+                            <span class="span1">
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://suprb.com/apps/gridalicious/" data-text="Grid-a-licious is now a plugin and fully responsive." data-via="suprb">Tweet</a>
+                            </span>
+
+                            <span class="span1">
+<div class="fb-like" data-href="http://suprb.com/apps/gridalicious/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+
+                            </span>
+                            <span class="span1">
+
+
+<a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsuprb.com%2Fapps%2Fgridalicious%2F&media=http%3A%2F%2Fsuprb.com%2Fapps%2Fgridalicious%2Fgridalicious.png&description=Grid%E2%80%94A%E2%80%94Licious.%20Making%20grids%20sexier%20on%20the%20net%20since%20%E2%80%9408.%20Now%20fully%20responsive." class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+
+                            </span>
+                            <span class="span1">
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="medium"></div>
+
+                            </span>
+
+
+                        </div>
+
+
+
+
+                        <div class="page-header">
+                            <h2>Get the plugin</h2>
+                            <p class="lead">Current version: 3.01</p>
+                        </div>
+                        <div class="row">
+                            <span class="span6">
+                                <a class="button controller-btn big-right btn-large btn-block btn" href="https://github.com/suprb/Grid-A-Licious">Available at Github</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- end #info -->
+                    <span class="span3"></span>
+                </div>
+            </div>
+            <!-- /container -->
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="span3"></div>
+                    <div class="span6">
+                        Grid-A-Licious&trade; 2008&mdash;2012. &copy; and built by
+                        <a class="scriptogram-link" href="http://suprb.com/">Andreas Pihlström</a><p>A Swedish geek with a passion for design, human behavior, and technology.</p>
+<a href="https://twitter.com/suprb" class="twitter-follow-button" data-show-count="false">Follow @suprb</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div>
+                    <div class="span3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- social thangs… -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=402565936468395";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+        <!-- Le javascript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script type="text/javascript">
+            var isAbsolute = false;
+            var isFixed = true;
+
+            $(document).ready(function () {
+
+                $("header").css({
+                    width: $("#info").width(),
+                    'margin-left': -$("#info").width() / 2
+                }).fadeIn(800);
+                $("header h1").fitText(0.8)
+
+                $(window).scroll(function () {
+                    //You've scrolled this much:
+                    if (($("#device").height() - (($(window).height() / 4) + $("header").height())) <= $(window).scrollTop()) {
+                        if (isAbsolute === false) {
+                            $("header").css({
+                                'position': 'absolute',
+                                'top': ($(window).scrollTop() + ($(window).height() / 4))
+                            });
+                            $("#resize_container").fadeOut(400);
+                            // $("header").fadeOut(800);
+                            isAbsolute = true;
+                            isFixed = false;
+                        }
+                    } else {
+                        if (isFixed === false) {
+                            $("header").css({
+                                'position': 'fixed',
+                                'top': ($(window).height() / 4)
+                            });
+                            $("#resize_container").fadeIn(400);
+                            // $("header").fadeIn(800);
+                            isAbsolute = false;
+                            isFixed = true;
+                        }
+                    }
+                });
+
+                $("#auto").click(function () {
+                    $('.button').removeClass('active');
+                    $(this).addClass('active');
+                    $("#device").animate({
+                        width: '100%'
+                    }, function () {
+                        $("#device").gridalicious('resize');
+                    });
+                })
+                $("#ipadLandscape").click(function () {
+                    $('.button').removeClass('active');
+                    $(this).addClass('active');
+                    $("#device").animate({
+                        width: 1024
+                    }, function () {
+                        $("#device").gridalicious('resize');
+                    });
+                })
+                $("#ipadPortrait").click(function () {
+                    $('.button').removeClass('active');
+                    $(this).addClass('active');
+                    $("#device").animate({
+                        width: 768
+                    }, function () {
+                        $("#device").gridalicious('resize');
+                    });
+                })
+                $("#iphoneLandscape").click(function () {
+                    $('.button').removeClass('active');
+                    $(this).addClass('active');
+                    $("#device").animate({
+                        width: 480
+                    }, function () {
+                        $("#device").gridalicious('resize');
+                    });
+                })
+                $("#iphonePortrait").click(function () {
+                    $('.button').removeClass('active');
+                    $(this).addClass('active');
+                    $("#device").animate({
+                        width: 320
+                    }, function () {
+                        $("#device").gridalicious('resize');
+                    });
+                })
+
+                $("#device").gridalicious({
+                    gutter: 10,
+                    width: 150,
+                    animate: true,
+                    animationOptions: {
+                            speed: 150,
+                            duration: 500,
+                            complete: onComplete
+                    },
+                });
+
+                // example1
+                $("#example1").gridalicious({
+                    width: 100
+                });
+
+                // example2
+                $("#example2").gridalicious({
+                    gutter: 1,
+                    width: 100
+                });
+
+                // example3
+                $("#example3").gridalicious({
+                    gutter: 1,
+                    width: 75,
+                    animate: true,
+                    animationOptions: {
+                            speed: 200,
+                            duration: 300,
+                            complete: onComplete
+                    },
+                });
+
+                // function not used. 
+                function onComplete(data) {
+                    
+                }
+
+                $('#prepend').click(function () {
+                    $("#example3").gridalicious('prepend', makeboxes());
+
+                });
+                $('#append').click(function () {
+                    $("#example3").gridalicious('append', makeboxes());
+                });
+
+            });
+        </script>
+
+<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+<script type="text/javascript">
+try {
+reinvigorate.track("3vzq2-36ezz97x0n");
+} catch(err) {}
+</script>
+    </body>
+</html>

@@ -9,6 +9,9 @@
   <%= @status.content %>
 </p>
 
+<%= render "comments/comments" %>
+<%= render "comments/form" %>
+
 <% if current_user == @status.user || current_user.try(:admin?) %>
 	<%= link_to 'Edit', edit_status_path(@status) %> |
 	<%= link_to 'Back', statuses_path %>

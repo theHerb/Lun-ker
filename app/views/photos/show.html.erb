@@ -14,6 +14,9 @@
   <%= image_tag @photo.image_url.to_s %>
 </p>
 
+<%= render "comments/comments" %>
+<%= render "comments/form" %>
+
 <% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
 	<%= link_to 'Edit', edit_photo_path(@photo) %> |
 	<%= link_to 'Back', photos_path %>

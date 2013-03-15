@@ -14,11 +14,11 @@ class PhotosController < ApplicationController
     @photo = current_user.photos.new(params[:photo])
     if @photo.save
       flash[:notice] = "Successfully added photo."
+      redirect_to photos_path
     else
       render :action => 'new'
     end
 
-    redirect_to photos_path
   end
 
   def show

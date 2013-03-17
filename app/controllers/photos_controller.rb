@@ -36,7 +36,7 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
     if @photo.update_attributes(params[:photo])
       flash[:notice] = "Successfully updated photo."
-      redirect_to @photo.album
+      redirect_to photos_path
     else
       render :action => 'edit'
     end
@@ -46,6 +46,6 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
     @photo.destroy
     flash[:notice] = "Successfully destroyed photo."
-    redirect_to @photo.album
+    redirect_to root_path
   end
 end

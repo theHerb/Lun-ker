@@ -2,4 +2,5 @@
 
 <%= render 'form' %>
 
-<p><%= link_to "Back to Album", @photo.album %></p>
+<%= link_to 'Back', photos_path %>
+<%= link_to 'Delete', @photo, confirm: 'Are you sure?', method: :delete %>

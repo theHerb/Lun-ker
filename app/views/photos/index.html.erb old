@@ -8,3 +8,17 @@
   </div>
 <% end %>
 
+________________________________________________________________________________
+
+  <%= link_to "Add a New Photo", new_photo_path, class: "btn btn-success" %>
+
+  <div class="photo">
+
+    <% @photos.each do |photo| %>
+      <div class="photo">
+        <h2><%= link_to image_tag(photo.image_url(:thumb)), photo %></h2>
+      </div>
+    <% end %>
+
+  </div>
+

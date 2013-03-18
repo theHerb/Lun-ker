@@ -41,6 +41,8 @@ gem 'jquery-rails'
 
 gem "mini_magick"
 gem "carrierwave"
+gem "carrierwave_direct"
+gem "sidekiq"
 
 gem "figaro"
 gem "fog"

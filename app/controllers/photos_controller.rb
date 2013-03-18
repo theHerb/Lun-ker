@@ -4,14 +4,17 @@ class PhotosController < ApplicationController
   
   def index
     @photos = Photo.all
+    @uploader = Photo.new.image
+    @uploader.success_action_redirect = new_photo_url
   end
 
   def new
-    @photo = Photo.new
+    @photo = Photo.new(key: params[:key])
   end
 
   def create
     @photo = current_user.photos.new(params[:photo])
+    #@photo = Photo.new(params[:photo])
     if @photo.save
       flash[:notice] = "Successfully added photo."
       redirect_to photos_path

@@ -4,7 +4,7 @@ class Photo < ActiveRecord::Base
   	
  	belongs_to :user
 
- 	after_save :enqueue_image
+ 	after_commit :enqueue_image, :on => :create
 
  	has_many :comments, as: :commentable
 
@@ -13,18 +13,19 @@ class Photo < ActiveRecord::Base
   	end
 
   	def enqueue_image
-    ImageWorker.perform_async(id, key) if key.present?
+    	ImageWorker.perform_async(id, key) if key.present?
   	end
 
-	class ImageWorker
-	    include Sidekiq::Worker
-	    
-	    def perform(id, key)
-	      photo = Photo.find(id)
-	      photo.key = key
-	      photo.remote_image_url = photo.image.direct_fog_url(with_path: true)
-	      photo.save!
-	    end
-	end
+  	class ImageWorker
+	  	include Sidekiq::Worker
+		sidekiq_options retry: false
+		 
+		    def perform(id, key)
+		      photo = Photo.find(id)
+		      photo.key = key
+		      photo.remote_image_url = photo.image.direct_fog_url(with_path: true)
+		      photo.save!
+		    end
+		end
 
 end

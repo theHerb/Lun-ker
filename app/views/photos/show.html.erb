@@ -11,14 +11,14 @@
 		</div>
 	</div>
 
-	<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
-		<%= link_to 'Edit', edit_photo_path(@photo) %> |
-		<%= link_to 'Back', photos_path %>
-	<% end %>
+	
 
 </div>
-
-<% if current_user.try(:admin?) %>
+<div>
+<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
+		<%= link_to 'Edit', edit_photo_path(@photo) %> |
+		<%= link_to 'Back', photos_path %>
+<% end %>
 
 <p>
 	<b>Photo Record:</b>
@@ -28,4 +28,9 @@
   <b>Content Location:</b>
   <%= @photo.image %>
 </p>
+</div>
+
+<% if current_user.try(:admin?) %>
+
+
 <% end %>

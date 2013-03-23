@@ -3,6 +3,10 @@
      <h1>All of the Photos</h1>
   </div>
 
+  <%= direct_upload_form_for @uploader do |f| %>
+    <p><%= f.file_field :image %></p>
+    <p><%= f.submit "Upload Photo" %></p>
+  <% end %>
 
     <div id="device">
             <div class="content">
@@ -16,10 +20,7 @@
             </div>
     </div> 
 
-  <%= direct_upload_form_for @uploader do |f| %>
-    <p><%= f.file_field :image %></p>
-    <p><%= f.submit "Upload Photo" %></p>
-  <% end %>
+
     
 
 

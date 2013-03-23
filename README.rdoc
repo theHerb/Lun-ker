@@ -24,7 +24,7 @@ STYLING
 	
 STATUS	
  	Need to update the status_index view to prevent users from deleting other users posts *DONE*
- 	Require JSON/AJAX when posting new status.  Don't need show page. *DONE changed redirect_to path
+ 	Require JSON/AJAX when posting new status.  Don't need show page. *DONE* changed redirect_to path
  		
 FRIENDS
 	Users can friend themselves *DONE*
@@ -38,6 +38,7 @@ PROFILE
 
 
 PHOTO
+	Paginate
 	Commentable *DONE*
 	Voting
 	Public / Private
@@ -55,10 +56,16 @@ ROUTE
 	
 EMAIL
 	SERVER
-		Send email as background task
+		Send email as background task *DONE*
 		config production action mailer
 	EMAIL BLOG
 		Set up initial email
+
+GRID-A-LICIOUS
+	Clean up the javascript
+
+UPLOADER
+	Review docs on scaling and re-sizing
 _________________________________________________________________________________
 
 Album **DISCONTINUED**

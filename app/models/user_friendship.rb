@@ -7,6 +7,8 @@ class UserFriendship < ActiveRecord::Base
 
 	validates :user_id, uniqueness: true
 
+	validate :disallow_self_referential_friendship
+
 	after_destroy :delete_mutual_friendship!
 
 	state_machine :state, initial: :pending do
@@ -53,4 +55,10 @@ class UserFriendship < ActiveRecord::Base
 	def delete_mutual_friendship!
 		mutual_friendship.delete
 	end
+
+	def disallow_self_referential_friendship
+	    if friend_id == user_id
+	      errors.add(:friend_id, "you can't be friends with yourself")
+	    end
+  end
 end

@@ -1,11 +1,10 @@
 ActionMailer::Base.smtp_settings = {
-	:address				=> "smtp.gmail.com",
-	:port					=> 587,
-	:domain					=> "gmail.com",
-	:user_name				=> "msh.cal.ab@gmail.com",
-	:password				=> "Summer66",
-	:authentication			=> "plain",
-	:enable_starttls_auto	=> true
+	:port =>           '587',
+    :address =>        'smtp.mandrillapp.com',
+    :user_name =>      ENV['MANDRILL_USERNAME'],
+    :password =>       ENV['MANDRILL_APIKEY'],
+    :domain =>         'heroku.com',
+    :authentication => :plain
 }
 
 require 'development_mail_interceptor'

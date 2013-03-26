@@ -56,10 +56,11 @@ SITE
 ROUTE
 	pretty links
 	
-EMAIL
+!!!EMAIL
 	SERVER
 		Send email as background task *DONE*
-		config production action mailer
+		!!!config production action mailer
+		!!!update user friendship email messages - add links to profile
 	EMAIL BLOG
 		Set up initial email
 

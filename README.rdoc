@@ -1,9 +1,11 @@
+HEROKU
+	user_friendship mailer not functioning
 
 FEED
 	Public
 	My Feed
 
-DEVISE
+!!!DEVISE
 	ADMIN
 		edit status *DONE*
 		edit album *DONE*
@@ -14,11 +16,11 @@ DEVISE
 		registration errors *DONE*
 	FORGOT PASSWORD
 		not set up correctly *DONE*
-		need to update re-direct link to proper url in production
+		!!!need to update re-direct link to proper url in production
 	ROUTING
 		
 
-STYLING
+!!!STYLING
 	PHOTO
 		Show page needs work
 	
@@ -26,8 +28,8 @@ STATUS
  	Need to update the status_index view to prevent users from deleting other users posts *DONE*
  	Require JSON/AJAX when posting new status.  Don't need show page. *DONE* changed redirect_to path
  		
-FRIENDS
-	Users can friend themselves !!!!!!
+!!!FRIENDS
+	!!!Users can friend themselves 
 	Need to add JSON/AJAX *DONE*
 	Draper gem - edit.html.erb sub_message
 	Send email invite
@@ -37,14 +39,14 @@ PROFILE
 		Use Uploader? 
 
 
-PHOTO
-	Paginate
+!!!PHOTO
+	!!!Paginate
 	Commentable *DONE*
 	Voting
 	Public / Private
 	Testing
 	Performance - cache on view all page
-	Default Name
+	!!!Default Name
 
 SEARCH
 	simple search

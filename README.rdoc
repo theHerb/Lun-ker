@@ -34,19 +34,20 @@ FRIENDS
 	Draper gem - edit.html.erb sub_message
 	Send email invite
 
-PROFILE
+!!!PROFILE
 	AVATAR
 		Use Uploader? 
+	!!!VIEW
 
 
-!!!PHOTO
-	!!!Paginate
+PHOTO
+	!!!Paginate *DONE*
 	Commentable *DONE*
 	Voting
 	Public / Private
 	Testing
 	Performance - cache on view all page
-	!!!Default Name
+	!!!Default Name *DONE*
 
 SEARCH
 	simple search

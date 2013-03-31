@@ -32,6 +32,8 @@ GEM
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     bcrypt-ruby (3.0.1-x86-mingw32)
+    bootstrap-will_paginate (0.0.9)
+      will_paginate
     bourne (1.4.0)
       mocha (~> 0.13.2)
     builder (3.0.4)
@@ -53,7 +55,6 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     connection_pool (1.0.0)
-    default_value_for (2.0.2)
     devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -202,16 +203,17 @@ GEM
       macaddr (~> 1.0)
     warden (1.2.1)
       rack (>= 1.0)
+    will_paginate (3.0.4)
 
 PLATFORMS
   ruby
   x86-mingw32
 
 DEPENDENCIES
+  bootstrap-will_paginate
   carrierwave
   carrierwave_direct
   coffee-rails (~> 3.2.1)
-  default_value_for
   devise
   factory_girl_rails
   figaro

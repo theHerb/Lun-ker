@@ -1,9 +1,9 @@
 class PhotosController < ApplicationController
 
-  before_filter :authenticate_user!, only: [:new, :create, :update, :show, :edit, :destroy]
+  before_filter :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
   
   def index
-    @photos = Photo.all
+    @photos = Photo.order("created_at DESC").page(params[:page]).per_page(20)
     @uploader = Photo.new.image
     @uploader.success_action_redirect = new_photo_url
   end

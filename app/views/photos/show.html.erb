@@ -30,6 +30,12 @@
 </p>
 </div>
 
+<%= simple_form_for @photo do |f| %>
+	<%= f.input :home_page %>
+	<%= f.button :submit %>
+<% end %>
+
+
 <% if current_user.try(:admin?) %>
 
 

@@ -1,7 +1,7 @@
 class HomePageController < ApplicationController
 
 	def index
-		  @photos = Photo.all
+		  @photos = Photo.where(:home_page => true)
 	end
 	
 end

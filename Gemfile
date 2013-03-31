@@ -47,6 +47,7 @@ gem "sidekiq"
 gem "figaro"
 gem "fog"
 #gem 'mandrill-api'
+gem "default_value_for"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

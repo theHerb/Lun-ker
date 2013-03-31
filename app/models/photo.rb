@@ -1,7 +1,8 @@
 class Photo < ActiveRecord::Base
   	attr_accessible  :name, :image, :remote_image_url, :user_id
   	mount_uploader :image, ImageUploader
-  	
+  	before_create :init
+
  	belongs_to :user
 
  	after_commit :enqueue_image, :on => :create
@@ -9,7 +10,7 @@ class Photo < ActiveRecord::Base
  	has_many :comments, as: :commentable
 
   	def image_name
-  			File.basename(image.path || image.filename) if image
+  		File.basename(image.path || image.filename) if image
   	end
 
   	def enqueue_image
@@ -26,6 +27,13 @@ class Photo < ActiveRecord::Base
 		      photo.remote_image_url = photo.image.direct_fog_url(with_path: true)
 		      photo.save!
 		    end
-		end
+	end
+
+	private 
+		def init
+			if self.name == ""
+				self.name = image_name
+			end
+	    end
 
 end

@@ -14,6 +14,7 @@ class PhotosController < ApplicationController
 
   def create
     @photo = current_user.photos.new(params[:photo])
+
     #@photo = Photo.new(params[:photo])
     if @photo.save
       flash[:notice] = "Successfully added photo."

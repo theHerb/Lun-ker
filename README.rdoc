@@ -5,7 +5,7 @@ FEED
 	Public
 	My Feed
 
-!!!DEVISE
+DEVISE
 	ADMIN
 		edit status *DONE*
 		edit album *DONE*
@@ -16,7 +16,7 @@ FEED
 		registration errors *DONE*
 	FORGOT PASSWORD
 		not set up correctly *DONE*
-		!!!need to update re-direct link to proper url in production
+		need to update re-direct link to proper url in production *DONE*
 	ROUTING
 		
 

@@ -1,5 +1,5 @@
 class Photo < ActiveRecord::Base
-  	attr_accessible  :name, :image, :remote_image_url, :user_id, :home_page
+  	attr_accessible  :name, :image, :remote_image_url, :user_id, :home_page, :rank
   	mount_uploader :image, ImageUploader
   	before_create :init
 

@@ -1,0 +1,13 @@
+
+.photo_comments {
+	border-top: solid 1px #CCC;
+	padding: 10px 0px;
+
+
+}
+
+.avatar {
+	height: 100px;
+	width: 100px;
+	background-color: #7F7F7F;
+}

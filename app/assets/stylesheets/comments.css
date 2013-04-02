@@ -1,11 +1,23 @@
-
-.photo_comments {
-	border-top: solid 1px #CCC;
-	padding: 10px 0px;
-
-
+.comment {
+	border-bottom: solid 1px #CCC;
+	padding: 5px 0px;
 }
 
+.comment p {
+	margin: 4px 0px;
+}
+
+.comment .admin {
+	display: none;
+}
+
+.comment.hover  {
+	background: #FAFAFA;
+}
+
+.comment.hover .admin {
+	display: inline;
+}
 .avatar {
 	height: 100px;
 	width: 100px;

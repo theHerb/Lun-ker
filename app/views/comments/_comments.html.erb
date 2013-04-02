@@ -1,19 +1,24 @@
-<div id="comments">
-	<% @comments.each do |comment| %>
-		<div class="photo_comments">
-			<div class = "row">
-				<div class= "span2'">
-				     <div class="avatar">
-				     </div>
-				</div>
-				      
-				<div class= "span7">
-				        <p><%= comment.content %></p>
-				        <div class="meta">
-				          <%= time_ago_in_words(comment.created_at) + " ago" %>   
-					    </div>
-				</div>
+<% @comments.each do |comment| %>
+
+		<div class="comment">
+		  <div class = "row">
+
+		    <div class= "span1 offset2">
+			   <% user = User.find(comment.user_id) %>	
+			   <%= link_to image_tag(user.gravatar_url), profile_path(user) %>
 			</div>
+		
+
+			<div class= "span8">
+		        <strong><%= user.profile_name %></strong>
+		        <p><%= comment.content %></p>
+		        <div class="meta">
+		          <%= time_ago_in_words(comment.created_at) + " ago" %>
+		        </div>
+		     </div>
+
+		      
+		  </div>
 		</div>
-	<% end %>
-</div>
+	
+<% end %>

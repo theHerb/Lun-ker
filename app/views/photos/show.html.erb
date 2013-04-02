@@ -1,20 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row">
-	 <div class="span2">
-	 	<div class="span8">  
-			<%= image_tag @photo.image_url(:large).to_s %>
-			
 
-			<%= render "comments/comments" %>
+	<div class="row">
+		 <div class="span1">
+		 </div>
+		 	<div class="span10">
+		 		<div class="photo">
+			 	  	<div class="photo_image">
+						<%= image_tag @photo.image_url(:large).to_s %>
+					</div>
+				</div>
+			</div>
+		
+		<%= render "comments/comments" %>
+
+		<div class="photo_comment_form">
 			<%= render "comments/form" %>
 		</div>
+		
 	</div>
 
-	
-
-</div>
-<div>
 <% if user_signed_in? %>	
 	<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
 			<%= link_to 'Edit', edit_photo_path(@photo) %> |

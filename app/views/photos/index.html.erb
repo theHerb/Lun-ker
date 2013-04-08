@@ -1,11 +1,11 @@
 <% title "Photos" %>
-
+<div class="row">
+</br>
   <%= direct_upload_form_for @uploader do |f| %>
-    <p><%= f.file_field :image %></p>
-    <p><%= f.submit "Upload Photo" %></p>
+    <div class = "span4 offset1"> <h4 class="text-info">Step 1 - Choose File</h4> <%= f.file_field :image %> </div>
+    <div class = "span4 offset2"> <h4 class="text-info">Step 2 - Upload it!</h4><%= f.submit "Upload Photo" %> </div>
   <% end %>
-
-
+</div>
    
 
     <div id="device">

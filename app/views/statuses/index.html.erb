@@ -1,24 +1,26 @@
-<div class = "page-header">
-   <h1>All of the Statuses</h1>
-  </div>
-<%= link_to "Post a New Status", new_path, class: "btn btn-success" %>
+
+   <h3>Got something to say... Post it here</h3>
+
+<%= link_to "Post a New Topic", new_path, class: "btn btn-success" %>
+</br>
+</br>
 <% @statuses.each do |status| %>
 <div class="status">
   <div class = "row">
-    <div class= "span1'">
-      <%= link_to image_tag(status.user.gravatar_url), profile_path(status.user) %>
+    <div class= "span1">
+      <%=  link_to image_tag(status.user.gravatar_url), profile_path(status.user) %>
     </div>
       <div class= "span7">
-        <strong><%= status.user.full_name %></strong>
-        <p><%= status.content %></p>
-        <div class="meta">
-          <%= time_ago_in_words(status.created_at) + " ago" %>
-          <% if current_user == status.user || current_user.try(:admin?) %>
-          <span class= "admin">
-            | <%= link_to 'Edit', edit_status_path(status) %> |
-            <%= link_to 'Delete', status, confirm: 'Are you sure?', method: :delete %>
-          </span>
-          <% end %>
+        <strong><%= status.user.profile_name %> says...</strong>
+        <p><%=  link_to status.content, status_path(status), {:style=>'color:#002859;', :class => "css_class"} %></p>
+          <div class="meta">
+            <em><%= time_ago_in_words(status.created_at) + " ago" %></em>
+            <% if current_user == status.user || current_user.try(:admin?) %>
+              <span class= "admin">
+                | <%= link_to 'Edit', edit_status_path(status) %> |
+                <%= link_to 'Delete', status, confirm: 'Are you sure?', method: :delete %>
+              </span>
+            <% end %>
         </div>
      </div>
   </div>

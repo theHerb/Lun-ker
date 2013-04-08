@@ -1,20 +1,30 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-	<b>Name:</b>
-	<%= @status.user.full_name %>
-</p>
-<p>
-  <b>Content:</b>
-  <%= @status.content %>
-</p>
+<div class="row">
 
-<%= render "comments/comments" %>
-<%= render "comments/form" %>
+	<br>
+	<div class= "span1">
+      <%=  link_to image_tag(@status.user.gravatar_url), profile_path(@status.user) %>
+    </div>
+     <div class= "span7">	
+		<h3><%= @status.user.profile_name %> says...</h3>
+	</div>
+	<div class= "span8 offset2">
+	
+			<div class = "icon_left"><i class= "icon-quote-left icon-2x"></i></div>
+			<div class= "status_align"><h3><em><%= @status.content %></em></h3></div>
+			<div class = "icon_right"><i class= "icon-quote-right icon-2x"></i></div>
+			<% if user_signed_in? %>
+			<% if current_user == @status.user || current_user.try(:admin?) %>
+				<div class= "status_align"><%= link_to 'Edit', edit_status_path(@status) %> |
+				<%= link_to 'Back', statuses_path %></br></br></div>
+			<% end %>
+		<% end %>
+	</div>
 
-<% if user_signed_in? %>
-	<% if current_user == @status.user || current_user.try(:admin?) %>
-		<%= link_to 'Edit', edit_status_path(@status) %> |
-		<%= link_to 'Back', statuses_path %>
-	<% end %>
-<% end %>
+			
+		<%= render "comments/comments" %>
+			
+		<div class= "status_comment">
+			<%= render "comments/form" %>
+		</div>
+</div>

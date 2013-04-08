@@ -3,7 +3,7 @@ class PhotosController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
   
   def index
-    @photos = Photo.order("created_at DESC").page(params[:page]).per_page(20)
+    @photos = Photo.order("created_at DESC").page(params[:page]).per_page(16)
     @uploader = Photo.new.image
     @uploader.success_action_redirect = new_photo_url
   end
@@ -14,8 +14,6 @@ class PhotosController < ApplicationController
 
   def create
     @photo = current_user.photos.new(params[:photo])
-
-    #@photo = Photo.new(params[:photo])
     if @photo.save
       flash[:notice] = "Successfully added photo."
       redirect_to photos_path

@@ -16,9 +16,12 @@
 }
 
 .processing{
-	text-align: justify;
+	
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 35px;
 	width: 200px;
-	height: 100px;
+	height: 150px;
 	color: #000000;
 }
 

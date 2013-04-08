@@ -5,28 +5,31 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 	<div class="navbar navbar-fixed-top">
   	<div class="navbar-inner">
       <div class = "container">
-  			 <a class="brand" href="<%= root_path %>">Lun-ker</a>
-
-  			 	<ul class="nav">
-            <li><%= link_to "Home", root_path %></li>
-  			 		<li><%= link_to "Statuses", feed_path %></li>
-            <li><%= link_to "Photos", photos_path %></li>
+    			<ul class="nav">
+              <li><%= link_to raw('<i class="icon-home icon-large"></i> Home'), root_path %></li>
+              <li class="divider-vertical"></li>
+              <li><%= link_to raw('<i class="icon-camera-retro icon-large"></i> Photos'), photos_path %></li>
+              <li class="divider-vertical"></li>
+              <li><%= link_to raw('<i class="icon-book icon-large"></i> Stories'), statuses_path %></li>
   			 	</ul>
 
           <ul class="nav pull-right">
-            <% if user_signed_in? %>
-              <li><%= link_to 'Friends', user_friendships_path %></li>
-              <li><%= link_to current_user.full_name, edit_reg_path %></li>
-              <li><%= link_to "Log Out", logout_path %></li>
-            <% else %>
-              <li><%= link_to "Register",register_path %></li>
-              <li><%= link_to "Log In",login_path %></li>
-            <% end %>
+              <% if user_signed_in? %>
+                <li><%= link_to raw('<i class="icon-user icon-large"></i> Friends'), user_friendships_path %></li>
+                <li class="divider-vertical"></li>
+                <li><%= link_to current_user.full_name, edit_reg_path %></li>
+                <li class="divider-vertical"></li>
+                <li><%= link_to "Log Out", logout_path %></li>
+              <% else %>
+                <li><%= link_to "Register",register_path %></li>
+                <li><%= link_to "Log In",login_path %></li>
+              <% end %>
           </ul>
 
 		  </div>

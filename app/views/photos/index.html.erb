@@ -1,7 +1,4 @@
 <% title "Photos" %>
-  <div class = "page-header">
-     <h1>All of the Photos</h1>
-  </div>
 
   <%= direct_upload_form_for @uploader do |f| %>
     <p><%= f.file_field :image %></p>
@@ -16,7 +13,12 @@
                 <div id="home_page">
                     <% @photos.each do |photo| %>
                         <div class="item">
-                            <div><%= link_to image_tag(photo.image_url(:thumb)), photo %></div>
+                            <% if photo.image_processed? %>
+                                    <div><%= link_to image_tag(photo.image_url(:thumb)), photo %></div>
+                            <% else %>
+                                    <div class="processing">Processing Image...</div>
+                            <% end %>
+                            
                         </div>
                     <% end %>  
                 </div>   

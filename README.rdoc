@@ -20,11 +20,12 @@ DEVISE
 	ROUTING
 		
 
-!!!STYLING
+STYLING
 	PHOTO
 		Show page needs work
 	
-STATUS	
+!!!STATUS
+	!!!Show styling	
  	Need to update the status_index view to prevent users from deleting other users posts *DONE*
  	Require JSON/AJAX when posting new status.  Don't need show page. *DONE* changed redirect_to path
  		
@@ -41,13 +42,13 @@ FRIENDS
 
 
 PHOTO
-	!!!Paginate *DONE*
+	Paginate *DONE*
 	Commentable *DONE*
 	Voting
 	Public / Private
 	Testing
 	Performance - cache on view all page
-	!!!Default Name *DONE*
+	Default Name *DONE*
 
 SEARCH
 	simple search

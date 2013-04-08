@@ -1,4 +1,4 @@
-<%= form_for [@commentable, @comment] do |f| %>
+<%= simple_form_for [@commentable, @comment] do |f| %>
   <% if @comment.errors.any? %>
     <div class="error_messages">
       <h2>Please correct the following errors.</h2>
@@ -14,6 +14,6 @@
     <%= f.text_area :content, rows: 4, cols: 800 %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.button :submit, 'Add Comment' %>
   </div>
 <% end %>

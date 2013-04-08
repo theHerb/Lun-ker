@@ -1,6 +1,7 @@
 .comment {
 	border-bottom: solid 1px #CCC;
 	padding: 5px 0px;
+	margin-bottom: 10px;
 }
 
 .comment p {
@@ -17,6 +18,10 @@
 
 .comment.hover .admin {
 	display: inline;
+}
+
+.created {
+	font-style: italic;
 }
 .avatar {
 	height: 100px;

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130402024856) do
+ActiveRecord::Schema.define(:version => 20130408170018) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -47,12 +47,13 @@ ActiveRecord::Schema.define(:version => 20130402024856) do
 
   create_table "photos", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
     t.string   "image"
     t.integer  "user_id"
-    t.boolean  "home_page",  :default => false
-    t.integer  "rank",       :default => 1
+    t.boolean  "home_page",       :default => false
+    t.integer  "rank"
+    t.boolean  "image_processed"
   end
 
   add_index "photos", ["user_id"], :name => "index_photos_on_user_id"

@@ -6,13 +6,20 @@
 
 .photo_image {
 	margin-top: 20px;
-	margin-botton: 20px;
+	margin-bottom: 20px;
 
 }
 
 .photo_comment_form {
 	margin-top: 10px;
 
+}
+
+.processing{
+	text-align: justify;
+	width: 200px;
+	height: 100px;
+	color: #000000;
 }
 
 

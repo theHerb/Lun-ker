@@ -5,8 +5,8 @@
 }
 
 .photo_image {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 
 }
 
@@ -23,6 +23,19 @@
 	width: 200px;
 	height: 150px;
 	color: #000000;
+}
+
+.photo_title {
+
+	font-family: 'Permanent Marker', cursive;
+	font-size: 28px;
+}
+
+.photo p {
+
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bolder;
+	font-size: 20px;
 }
 
 

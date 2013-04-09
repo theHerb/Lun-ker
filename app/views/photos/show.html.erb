@@ -3,9 +3,13 @@
 	
 		 	<div class="span10 offset1">
 		 		<div class="photo">
+		 			<div class= "photo_title">" <%= @photo.name %> "</div>
+			 	  	
 			 	  	<div class="photo_image">
 						<%= image_tag @photo.image_url(:large).to_s %>
 					</div>
+
+					<p><%= @photo.story %></p>
 
 					<% if user_signed_in? %>	
 						<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>

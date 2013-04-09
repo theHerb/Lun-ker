@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130408170018) do
+ActiveRecord::Schema.define(:version => 20130409161635) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20130408170018) do
     t.boolean  "home_page",       :default => false
     t.integer  "rank"
     t.boolean  "image_processed"
+    t.string   "story"
   end
 
   add_index "photos", ["user_id"], :name => "index_photos_on_user_id"

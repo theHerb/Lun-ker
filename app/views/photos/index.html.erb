@@ -17,7 +17,7 @@
                                     <div><%= link_to image_tag(photo.image_url(:thumb)), photo %></div>
                             <% else %>
                                     <div class="processing">
-                                        <i class="icon-spinner icon-spin icon-2x pull-left"></i><em>Image Processing...<br> try refreshing</em>
+                                        <i class="icon-spinner icon-spin icon-2x pull-left"></i><em>Image Processing...<br> try <%= link_to 'refreshing', photos_path %></em>
                                     </div>
                             <% end %>
                             

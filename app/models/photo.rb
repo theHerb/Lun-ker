@@ -1,7 +1,6 @@
 class Photo < ActiveRecord::Base
-  	attr_accessible  :name, :image, :remote_image_url, :user_id, :home_page, :rank
+  	attr_accessible  :name, :image, :user_id, :remote_image_url, :home_page, :rank, :story
   	mount_uploader :image, ImageUploader
-  	before_create :init
 
  	belongs_to :user
 
@@ -30,11 +29,12 @@ class Photo < ActiveRecord::Base
 		    end
 	end
 
-	private 
-		def init
-			if self.name == ""
-				self.name = image_name
-			end
-	    end
+	#before_create :init
+	# private 
+	# 	def init
+	# 		if self.name == ""
+	# 			self.name = image_name
+	# 		end
+	#     end
 
 end

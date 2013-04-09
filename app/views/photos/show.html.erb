@@ -11,13 +11,16 @@
 
 					<p><%= @photo.story %></p>
 
-					<% if user_signed_in? %>	
+					<% if user_signed_in? %>
+						<%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), photos_path %> | 
 						<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
-								<%= link_to 'Edit', edit_photo_path(@photo) %> |
-								
+								<%= link_to raw('<i class="icon-edit"></i> edit'), edit_photo_path(@photo) %> |	<%= link_to raw('<i class="icon-trash"></i> delete'), @photo, confirm: 'Are you sure?', method: :delete %>	
+						<% else %>
+							by <%= link_to @photo.user.profile_name, profile_path(@photo.user) %> |
 						<% end %>
 
-						<%= link_to 'Back', photos_path %>
+					<% else %>
+						<%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), photos_path %> | by <%= link_to @photo.user.profile_name, profile_path(@photo.user) %> | 
 					<% end %>
 				</div>
 			</div>

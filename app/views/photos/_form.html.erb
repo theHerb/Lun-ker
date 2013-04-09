@@ -4,9 +4,10 @@
   <%= f.hidden_field :key %>
   </br>
   <div class = "span5 offset1"><h4 class="text-success">Step 3: Add some detail if you want...</h4>
-    <%= f.input :name %>
+    <%= f.input :name, label: 'Name' %>
     <%= f.label :story %>
-    <%= f.text_area :story, rows: 10, label: "Story" %>
+    <%= f.text_area :story, rows: 10, label: 'story' %>
+    <%= f.input :url, label: 'Web Link', hint: 'please source any content that is not your own.' %>
  </div>
   
   <div class = "span5"> <h4 class="text-success">Step 4: Post It!</h4></br> <%= f.button :submit, 'Post It!' %></div>

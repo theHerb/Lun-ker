@@ -1,47 +1,49 @@
 
 <div class="row">
 	
-		 	<div class="span10 offset1">
+		 	<div class="span12">
 		 		<div class="photo">
 		 			<div class= "photo_title">" <%= @photo.name %> "</div>
 			 	  	
-			 	  	<div class="photo_image">
-						<%= image_tag @photo.image_url(:large).to_s %>
-					</div>
+			 	  	<div class="photo_image"><%= image_tag @photo.image_url(:large).to_s %></div>
 
 					<p><%= @photo.story %></p>
 
 					<% if user_signed_in? %>
 						<%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), photos_path %> | 
-						<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
-								<%= link_to raw('<i class="icon-edit"></i> edit'), edit_photo_path(@photo) %> |	<%= link_to raw('<i class="icon-trash"></i> delete'), @photo, confirm: 'Are you sure?', method: :delete %>	
-						<% else %>
-							by <%= link_to @photo.user.profile_name, profile_path(@photo.user) %> |
-						<% end %>
+							
+							<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
+									<%= link_to raw('<i class="icon-edit"></i> edit'), edit_photo_path(@photo) %> |	<%= link_to raw('<i class="icon-trash"></i> delete'), @photo, confirm: 'Are you sure?', method: :delete %>
 
+							<% else %>
+								by <%= link_to @photo.user.profile_name, profile_path(@photo.user) %> |
+							<% end %>
+							<% if @photo.url != nil %>
+								| <%= link_to raw('<i class="icon-external-link"></i> source'), @photo.url %>
+							<% end %>
 					<% else %>
 						<%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), photos_path %> | by <%= link_to @photo.user.profile_name, profile_path(@photo.user) %> | 
+						<% if @photo.url != nil %>
+							| <%= link_to raw('<i class="icon-external-link"></i> source'), @photo.url %>
+						<% end %>
 					<% end %>
 				</div>
 			</div>
-		
 		<%= render "comments/comments" %>
-
-		<div class="photo">
-			<%= render "comments/form" %>
+		<div class="span12">
+			<div class= "align"><%= render "comments/form" %></div>
 		</div>
 		
-		<div class="span4 offset5">
 			<% if current_user.try(:admin?) %>
-		
+			<div class="span4 offset5">
 				<%= simple_form_for @photo do |f| %>
 					<%= f.input :home_page,  as: :radio_buttons %>
 					<%= f.input :rank %>
 					<%= f.button :submit %>
 				<% end %>
-
+			</div>
 			<% end %>
-		</div>
+		
 </div>
 
 	

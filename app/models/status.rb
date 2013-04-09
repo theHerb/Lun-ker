@@ -1,5 +1,5 @@
 class Status < ActiveRecord::Base
-	attr_accessible :content, :user_id
+	attr_accessible :content, :user_id, :rank
 
 	belongs_to :user
 

@@ -27,4 +27,15 @@
 			<%= render "comments/form" %>
 		</div>
 	</div>
+
+	<div class="span4 offset5">
+			<% if current_user.try(:admin?) %>
+		
+				<%= simple_form_for @status do |f| %>
+					<%= f.input :rank %>
+					<%= f.button :submit %>
+				<% end %>
+
+			<% end %>
+		</div>
 </div>

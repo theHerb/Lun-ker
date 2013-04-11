@@ -35,15 +35,16 @@ Lunker::Application.routes.draw do
     resources :comments
   end
 
+  resources :contest
+
   get 'feed', to: "statuses#index", as: :feed
   get 'new', to: "statuses#new", as: :new
   root to: 'home_page#index'
 
   get '/:id', to: 'profiles#show', as: 'profile'
-  
-
  
-  
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

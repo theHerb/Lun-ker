@@ -2,7 +2,7 @@
 <div class="row">
 </br>
   <%= direct_upload_form_for @uploader do |f| %>
-    <div class = "span5 offset1"> <h4 class="text-success">Step 1: Choose File</h4> <%= f.file_field :image %> </div>
+    <div class = "span5 offset1"> <h4 class="text-success">Step 1: Choose Photo</h4> <%= f.file_field :image %> </div>
     <div class = "span5 offset1"> <h4 class="text-success">Step 2 - Upload it!</h4><%= f.submit "Upload Photo" %> <small>NOTE: Large files may take longer to upload. </small></div>
   <% end %>
 </div>

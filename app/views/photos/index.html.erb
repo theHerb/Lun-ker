@@ -14,7 +14,7 @@
                     <% @photos.each do |photo| %>
                         <div class="item">
                             <% if photo.image_processed? %>
-                                    <div><%= link_to image_tag(photo.image_url(:thumb)), photo %></div>
+                                    <div><%= link_to image_tag(photo.image_url(:photo_fill)), photo %></div>
                             <% else %>
                                     <div class="processing">
                                         <i class="icon-spinner icon-spin icon-2x pull-left"></i><em>Image Processing...<br> try <%= link_to 'refreshing', photos_path %></em>

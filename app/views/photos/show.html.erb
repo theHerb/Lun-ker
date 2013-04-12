@@ -2,8 +2,9 @@
 	
 		 	<div class="span12">
 		 		<div class="photo">
+		 			<% if @photo.name != "" %>
 		 			<div class= "photo_title">" <%= @photo.name %> "</div>
-			 	  	
+			 	  	<% end %>
 			 	  	<div class="photo_image"><%= image_tag @photo.image_url(:large).to_s %></div>
 
 					<p><%= @photo.story %></p>

@@ -26,7 +26,7 @@
               <% if user_signed_in? %>
                 <li><%= link_to raw('<i class="icon-user icon-large"></i> Friends'), user_friendships_path %></li>
                 <li class="divider-vertical"></li>
-                <li><%= link_to current_user.full_name, edit_reg_path %></li>
+                <li><%= link_to current_user.profile_name, edit_reg_path %></li>
                 <li class="divider-vertical"></li>
                 <li><%= link_to "Log Out", logout_path %></li>
               <% else %>

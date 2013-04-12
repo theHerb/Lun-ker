@@ -19,14 +19,18 @@ class ImageUploader < CarrierWave::Uploader::Base
   include Sprockets::Helpers::IsolatedHelper
 
   version :thumb do
-    process :resize_to_limit => [200, 200]
+    process :resize_to_fill => [100, 100]
   end
 
   version :home do
     process :resize_to_limit => [300, 300]
   end
 
-  version :fill do
+  version :photo_fill do
+    process :resize_to_fill => [200, 200]
+  end
+
+  version :photo_limit do
     process :resize_to_fill => [200, 200]
   end
 

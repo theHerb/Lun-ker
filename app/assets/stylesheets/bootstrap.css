@@ -5230,6 +5230,9 @@ button.close {
 }
 .affix {
   position: fixed;
+  top:0;
+  width: 100%;
+  padding: 0;
 }
 .fade {
   opacity: 0;

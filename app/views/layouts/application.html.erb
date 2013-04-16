@@ -8,8 +8,12 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
 </head>
+  <div class="header">
+  <img src="http://placehold.it/700x120"/>
+  <div class= "pull-right"><img src="http://placehold.it/220x120"/></div>
+  </div>
 <body>
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar" data-spy="affix" data-offset-top="120">
   	<div class="navbar-inner">
       <div class = "container">
     			<ul class="nav">
@@ -49,5 +53,8 @@
 
     <%= yield %>
   </div>
+
+    <%= render 'layouts/footer' %>
+
 </body>
 </html>

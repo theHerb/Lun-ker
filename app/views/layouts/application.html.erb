@@ -8,39 +8,41 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
 </head>
-  <div class="header">
-  <img src="http://placehold.it/700x120"/>
-  <div class= "pull-right"><img src="http://placehold.it/220x120"/></div>
-  </div>
+
 <body>
-	<div class="navbar" data-spy="affix" data-offset-top="120">
+  <div class="banner">
+    <img src="http://placehold.it/400x90"/>
+    <div class= "pull-right"><img src="http://placehold.it/520x90"/></div>
+  </div>
+
+	<div class="navbar" data-spy="affix" data-offset-top="90">
   	<div class="navbar-inner">
-      <div class = "container">
-    			<ul class="nav">
-              <li><%= link_to raw('<i class="icon-home icon-large"></i> Home'), root_path %></li>
-              <li class="divider-vertical"></li>
-              <li><%= link_to raw('<i class="icon-camera-retro icon-large"></i> Photos'), photos_path %></li>
-              <li class="divider-vertical"></li>
-              <li><%= link_to raw('<i class="icon-comments-alt icon-large"></i> Forum'), statuses_path %></li>
-              <li class="divider-vertical"></li>
-              <li><%= link_to raw('<i class="icon-money icon-large"></i> Contests'), contest_index_path %></li>
-  			 	</ul>
-
-          <ul class="nav pull-right">
-              <% if user_signed_in? %>
-                <li><%= link_to raw('<i class="icon-user icon-large"></i> Friends'), user_friendships_path %></li>
+        <div class = "container">
+      			<ul class="nav">
+                <li><%= link_to raw('<i class="icon-home icon-large"></i> Home'), root_path %></li>
                 <li class="divider-vertical"></li>
-                <li><%= link_to current_user.profile_name, edit_reg_path %></li>
+                <li><%= link_to raw('<i class="icon-camera-retro icon-large"></i> Photos'), photos_path %></li>
                 <li class="divider-vertical"></li>
-                <li><%= link_to "Log Out", logout_path %></li>
-              <% else %>
-                <li><%= link_to "Register",register_path %></li>
-                <li><%= link_to "Log In",login_path %></li>
-              <% end %>
-          </ul>
+                <li><%= link_to raw('<i class="icon-comments-alt icon-large"></i> Forum'), statuses_path %></li>
+                <li class="divider-vertical"></li>
+                <li><%= link_to raw('<i class="icon-money icon-large"></i> Contests'), contest_index_path %></li>
+    			 	</ul>
 
-		  </div>
-	 </div>
+            <ul class="nav pull-right">
+                <% if user_signed_in? %>
+                  <li><%= link_to raw('<i class="icon-user icon-large"></i> Friends'), user_friendships_path %></li>
+                  <li class="divider-vertical"></li>
+                  <li><%= link_to current_user.profile_name, edit_reg_path %></li>
+                  <li class="divider-vertical"></li>
+                  <li><%= link_to "Log Out", logout_path %></li>
+                <% else %>
+                  <li><%= link_to "Register",register_path %></li>
+                  <li><%= link_to "Log In",login_path %></li>
+                <% end %>
+            </ul>
+
+  		  </div>
+  	 </div>
   </div>
 
   <div class = "container">

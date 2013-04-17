@@ -7,9 +7,12 @@
 		<h3><%= @status.user.profile_name %> says...</h3></br>
 	</div>
 	<div class= "span10 offset1">
-			<div class = "icon_left"><i class= "icon-quote-left icon-2x"></i></div>
-			<div class= "status_align"><%= @status.content %></div>
-			<div class = "icon_right"><i class= "icon-quote-right icon-2x"></i></div>
+			
+			<div class= "well">
+				<div class= "status_align"><%= @status.content %></div>
+			</div>
+			
+
 	</div>
 	<div class= "span12">
 		<% if user_signed_in? %>

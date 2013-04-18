@@ -38,4 +38,8 @@ class ImageUploader < CarrierWave::Uploader::Base
      %w(jpg jpeg gif png)
   end
 
+  def filename
+    "#{@original_filename}".underscore
+  end
+
 end

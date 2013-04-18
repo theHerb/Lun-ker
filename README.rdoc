@@ -43,7 +43,7 @@ PROFILE
 	STYLING
 
 
-!!!PHOTO
+PHOTO
 	Paginate *DONE*
 	Commentable *DONE*
 	Voting
@@ -51,8 +51,8 @@ PROFILE
 	Testing
 	Performance - cache on view all page
 	Default Name *DONE*
-	!!!http:\\ default
-	!!!file name formatting
+	http:\\ default
+	file name formatting *DONE*
 
 SEARCH
 	simple search

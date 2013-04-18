@@ -34,13 +34,16 @@
 		</div>
 		
 			<% if current_user.try(:admin?) %>
-			<div class="span4 offset5">
-				<%= simple_form_for @photo do |f| %>
-					<%= f.input :home_page,  as: :radio_buttons %>
-					<%= f.input :rank %>
-					<%= f.button :submit %>
-				<% end %>
-			</div>
+				<div class="span4 offset1">
+					<%= simple_form_for @photo do |f| %>
+						<%= f.input :home_page,  as: :radio_buttons %>
+						<%= f.input :rank %>
+						<%= f.button :submit %>
+					<% end %>
+				</div>
+				<div class="span4 offset1">
+					<%= @photo.inspect %>
+				</div>
 			<% end %>
 		
 </div>

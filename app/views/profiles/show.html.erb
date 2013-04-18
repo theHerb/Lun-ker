@@ -24,9 +24,11 @@
     	<% end %>
     <% end %>
 </div>
+</br>
+</br>
 <div class= "span12">
     <% @photos.each do |photo| %>
-    <div class= "span1">
+    <div class= "span2">
         <div  class = "img-polaroid" ><%= link_to image_tag(photo.image_url(:thumb)), photo %></div>
     </div>
     <% end %>                            

@@ -1,0 +1,116 @@
+<div class= "span12">
+	<h1>Member Profile</h1>
+</div>
+<div class= "span1">
+      <%=  image_tag(@user.gravatar_url) %>
+</div>
+<div class= "span10">
+<p>Profile name: <%= @user.profile_name %></p>
+<p>Member Since: <%= @user.created_at.to_date %></p>
+<p>Last Signed In: <%= @user.last_sign_in_at.to_date %></p>
+</div>
+<div class= "span2">
+<% if user_signed_in? %>
+	<% if current_user.id != @user.id %>  
+		<% if signed_in? %>
+			<div id="friend-status">
+				<% if current_user.friends.include?(@user) || current_user.pending_friends.include?(@user) %>
+					<%= link_to "Edit Friendship", edit_user_friendship_path(friend_id: @user), class: 'btn' %>
+				<% else %>
+					<%= link_to "Add Friend", new_user_friendship_path(friend_id: @user), class: 'btn', id:'add-friendship', data: {friend_id: @user.to_param} %>
+				<% end %>
+			</div>
+		<% end %>
+	<% end %>
+<% end %>
+</div>
+<div class= "span12">
+	<div id="device">
+            <div class="content">
+                <div id="home_page">
+                    <% @photos.each do |photo| %>
+                        <div class="item">
+                            <% if photo.image_processed? %>
+                                    <div><%= link_to image_tag(photo.image_url(:thumb)), photo %></div>
+                            <% else %>
+                                    <div class="processing">
+                                        <i class="icon-spinner icon-spin icon-2x pull-left"></i><em>Image Processing...<br> try <%= link_to 'refreshing', photos_path %></em>
+                                    </div>
+                            <% end %>
+                            
+                        </div>
+                    <% end %>  
+                </div>   
+            </div>
+    </div> 
+
+    <div class = "pagination-large pagination-centered">
+        <%= will_paginate @photos %>
+    </div> 
+ </div>
+
+<script type="text/javascript">    
+            var isAbsolute = false;
+            var isFixed = true;
+
+            $(document).ready(function () {
+
+                $("header").css({
+                    width: $("#info").width(),
+                    'margin-left': -$("#info").width() / 2
+                }).fadeIn(800);
+                $("header h1").fitText(0.8)
+
+                $(window).scroll(function () {
+                    //You've scrolled this much:
+                    if (($("#device").height() - (($(window).height() / 4) + $("header").height())) <= $(window).scrollTop()) {
+                        if (isAbsolute === false) {
+                            $("header").css({
+                                'position': 'absolute',
+                                'top': ($(window).scrollTop() + ($(window).height() / 4))
+                            });
+                            $("#resize_container").fadeOut(400);
+                            // $("header").fadeOut(800);
+                            isAbsolute = true;
+                            isFixed = false;
+                        }
+                    } else {
+                        if (isFixed === false) {
+                            $("header").css({
+                                'position': 'fixed',
+                                'top': ($(window).height() / 4)
+                            });
+                            $("#resize_container").fadeIn(400);
+                            // $("header").fadeIn(800);
+                            isAbsolute = false;
+                            isFixed = true;
+                        }
+                    }
+                });
+          
+                // example1
+                $("#home_page").gridalicious({
+                    gutter: 1,
+                    width: 200,
+                    animate: false,
+                    animationOptions: {
+                            speed: 150,
+                            duration: 1000,
+                            complete: onComplete
+                    },
+                });
+
+                // function not used. 
+                function onComplete(data) {
+                    
+                }
+
+            });
+        </script>
+
+<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+<script type="text/javascript">
+try {
+reinvigorate.track("3vzq2-36ezz97x0n");
+} catch(err) {}
+</script>

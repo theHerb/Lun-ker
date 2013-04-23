@@ -9,7 +9,7 @@
 					<p><%= @photo.story %></p>
 
 					<% if user_signed_in? %>
-						<%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), photos_path %>  
+						 <%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), :back %>  
 							
 							<% if current_user.id == @photo.user_id || current_user.try(:admin?) %>
 									| <%= link_to raw('<i class="icon-edit"></i> edit'), edit_photo_path(@photo) %> |	<%= link_to raw('<i class="icon-trash"></i> delete'), @photo, confirm: 'Are you sure?', method: :delete %>
@@ -19,7 +19,7 @@
 								| <%= link_to raw('<i class="icon-external-link"></i> source'), @photo.url %>
 							<% end %>
 					<% else %>
-						<%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), photos_path %> | by <%= link_to @photo.user.profile_name, profile_path(@photo.user) %> | 
+						<%= link_to raw('<i class="icon-circle-arrow-left"></i> back'), :back %> | by <%= link_to @photo.user.profile_name, profile_path(@photo.user) %> | 
 						<% if @photo.url != "" %>
 							| <%= link_to raw('<i class="icon-external-link"></i> source'), @photo.url %>
 						<% end %>

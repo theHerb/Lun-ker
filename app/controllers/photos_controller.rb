@@ -6,6 +6,7 @@ class PhotosController < ApplicationController
     @photos = Photo.order("created_at DESC").page(params[:page]).per_page(16)
     @uploader = Photo.new.image
     @uploader.success_action_redirect = new_photo_url
+
   end
 
   def new
@@ -28,6 +29,7 @@ class PhotosController < ApplicationController
     @commentable = @photo
     @comments = @commentable.comments
     @comment = Comment.new
+
   end
 
   def edit

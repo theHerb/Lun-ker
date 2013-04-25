@@ -40,7 +40,7 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
     if @photo.update_attributes(params[:photo])
       flash[:notice] = "Successfully updated photo."
-      redirect_to photos_path
+      redirect_to root_path
     else
       render :action => 'edit'
     end

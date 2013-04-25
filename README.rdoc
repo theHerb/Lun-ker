@@ -6,7 +6,7 @@ FEED
 	Public
 	My Feed
 
-DEVISE
+!!!DEVISE
 	ADMIN
 		edit status *DONE*
 		edit album *DONE*
@@ -19,6 +19,7 @@ DEVISE
 		not set up correctly *DONE*
 		need to update re-direct link to proper url in production *DONE*
 	ROUTING
+	!!!!BLOCK KEY USER NAMES
 		
 
 STYLING

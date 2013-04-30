@@ -10,7 +10,7 @@
     <div class= "span1">
       <%=  link_to image_tag(status.user.gravatar_url), profile_path(status.user) %>
     </div>
-      <div class= "span7">
+      <div class= "span11">
         <strong><%= status.user.profile_name %> says...</strong>
         <p><%=  link_to status.content, status_path(status), {:style=>'color:#002859;', :class => "css_class"} %></p>
           <div class="meta">
@@ -25,6 +25,14 @@
      </div>
   </div>
 </div>
+
 <% end %>
+</br>
+<p style= "text-align: center;"><i class="icon-star-empty icon-spin icon-2x"></i></p>
+
+<h2 style= "font-family: 'Patrick Hand SC', cursive; text-align: center;">Get an Avatar <%= link_to "HERE", "http://www.gravatar.com" %></h2>
+</br>
+
+
 
 

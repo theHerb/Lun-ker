@@ -1,2 +1,0 @@
-User.create(:email => 'msh.cal.ab@gmail.com', :password => 'imagipraw', :password_confirmation => 'imagipraw', :first_name => 'Matt', :last_name => 'Hartwig', :profile_name => 'BigShooter')
-User.create(:email => 'mhartwig88@hotmail.com', :password => 'imagipraw', :password_confirmation => 'imagipraw', :first_name => 'David', :last_name => 'Hartwig', :profile_name => 'littleD')

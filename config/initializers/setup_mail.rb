@@ -7,5 +7,5 @@ ActionMailer::Base.smtp_settings = {
     :authentication => :plain
 }
 
-require 'development_mail_interceptor'
-ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?
+# require 'development_mail_interceptor'
+# ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?

@@ -11,7 +11,8 @@ Lunker::Application.routes.draw do
     get '/edit', to: 'devise/registrations#edit', as: :edit_reg
   end
 
-  devise_for :users, skip: [:sesssions]
+  devise_for :users, skip: [:sesssions],
+                     controllers: {omniauth_callbacks: "omniauth_callbacks"}
 
    as :user do
     get '/login' => 'devise/sessions#new', as: :new_user_session
@@ -19,6 +20,8 @@ Lunker::Application.routes.draw do
     delete '/logout' => 'devise/sessions#destroy', as: :destroy_user_session
   end
 
+  # devise_for :users, path_names: {sign_in: "login", sign_out: "logout"},
+  #                  controllers: {omniauth_callbacks: "omniauth_callbacks"}
 
   resources :user_friendships do 
     member do

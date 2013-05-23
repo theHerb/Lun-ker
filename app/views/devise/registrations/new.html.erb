@@ -5,12 +5,14 @@
       <%= devise_error_messages! %>
         <fieldset>
             <legend>New <%= resource_name.to_s.humanize %></legend>
-        	<div><%= f.input :first_name %></div>
-          <div><%= f.input :last_name %></div>
-          <div><%= f.input :profile_name %></div>
-          <div><%= f.input :email %></div>
-          <div><%= f.input :password %></div>
-          <div><%= f.input :password_confirmation %></div>
+          	<div><%= f.input :first_name %></div>
+            <div><%= f.input :last_name %></div>
+            <div><%= f.input :profile_name %></div>
+            <div><%= f.input :email %></div>
+          <% if f.object.password_required? %>
+            <div><%= f.input :password %></div>
+            <div><%= f.input :password_confirmation %></div>
+          <% end %>
 
           <div><%= f.button :submit, "Submit" %></div>
         </fieldset>

@@ -43,7 +43,7 @@ gem "mini_magick"
 gem "carrierwave"
 gem "carrierwave_direct"
 gem "sidekiq"
-
+gem "omniauth-twitter"
 gem "figaro"
 gem "fog"
 #gem 'mandrill-api'

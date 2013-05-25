@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="span4">
+	<div class="span6">
 		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %> 
 
 			<fieldset>
@@ -20,7 +20,11 @@
 	<%= render "devise/shared/links" %>
 	</div>
 
-	<div class="span8">
-		<h2>Signing in is easy and secure</h2>
-	</div>
+	<div class="span6">
+    <div class="well">
+      <legend>Use Another Account</legend>
+        <%= link_to raw('<i class="icon-twitter-sign icon-4x"></i>'), user_omniauth_authorize_path(:twitter) %>
+        <%= link_to raw('<i class="icon-facebook-sign icon-4x"></i>'), user_omniauth_authorize_path(:facebook) %>
+        <%= link_to raw('<i class="icon-google-plus-sign icon-4x"></i>'), user_omniauth_authorize_path(:google_oauth2) %>
+    </div>
 </div>

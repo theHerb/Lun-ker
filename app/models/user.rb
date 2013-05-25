@@ -15,7 +15,6 @@ class User < ActiveRecord::Base
                            uniqueness: true,
                            :format => { :with => /^[a-zA-Z0-9_.-]+$/,
     :message => 'Profile name formatted incorrectly. Letters and numbers only.  No spaces.'}
-
   has_many :statuses
   has_many :photos
   has_many :user_friendships

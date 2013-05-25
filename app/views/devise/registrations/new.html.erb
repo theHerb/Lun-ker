@@ -22,9 +22,9 @@
   <div class="span6">
     <div class="well">
       <legend>Use Another Account</legend>
-        <%= link_to raw('<i class="icon-twitter-sign icon-4x"></i>'), user_omniauth_authorize_path(:twitter) %>
+        <%= link_to raw('<i class="icon-twitter-sign icon-4x text-info"></i>'), user_omniauth_authorize_path(:twitter) %>
         <%= link_to raw('<i class="icon-facebook-sign icon-4x"></i>'), user_omniauth_authorize_path(:facebook) %>
-        <%= link_to raw('<i class="icon-google-plus-sign icon-4x"></i>'), user_omniauth_authorize_path(:google_oauth2) %>
+        <%= link_to raw('<i class="icon-google-plus-sign icon-4x text-error"></i>'), user_omniauth_authorize_path(:google_oauth2) %>
     </div>
   </div>
 

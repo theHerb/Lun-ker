@@ -1,7 +1,5 @@
-period in username
-
 identical filename causes issues in index
 
 source link should open new tab
 
- 
+twitter first last name

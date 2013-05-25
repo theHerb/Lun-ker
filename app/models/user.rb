@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   #validates :last_name, presence: true
   validates :profile_name, presence: true,
                            uniqueness: true,
-                           :format => { :with => /^[a-zA-Z0-9_-]+$/,
+                           :format => { :with => /^[a-zA-Z0-9_.-]+$/,
     :message => 'Profile name formatted incorrectly. Letters and numbers only.  No spaces.'}
 
   has_many :statuses
@@ -46,7 +46,22 @@ class User < ActiveRecord::Base
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider
       user.uid = auth.uid
+                user.first_name = "twitter_name"
+          user.last_name = "twitter_name"
       user.profile_name = auth.info.nickname
+      if auth.provider = "google_oauth2"
+        user.email = auth.info.email
+        user.first_name = auth.info.first_name
+        user.last_name = auth.info.last_name
+      elsif auth.provider = "facebook"
+          user.email = auth.info.email
+          user.first_name = auth.info.first_name
+          user.last_name = auth.info.last_name
+      else
+          twitter_name = auth.info.name
+          user.first_name = "twitter_name"
+          user.last_name = "twitter_name"
+      end
     end
   end
 

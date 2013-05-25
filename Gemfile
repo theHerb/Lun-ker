@@ -45,6 +45,7 @@ gem "carrierwave_direct"
 gem "sidekiq"
 gem "omniauth-twitter"
 gem "omniauth-facebook"
+gem 'omniauth-google-oauth2'
 gem "figaro"
 gem "fog"
 #gem 'mandrill-api'

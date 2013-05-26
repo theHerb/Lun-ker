@@ -39,6 +39,7 @@ Lunker::Application.routes.draw do
   end
 
   resources :contest
+  resources :tos
 
   get 'feed', to: "statuses#index", as: :feed
   get 'new', to: "statuses#new", as: :new

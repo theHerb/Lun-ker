@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(:version => 20130521222544) do
     t.string   "image"
     t.integer  "user_id"
     t.boolean  "home_page",       :default => false
-    t.integer  "rank"
+    t.integer  "rank",            :default => 1
     t.boolean  "image_processed"
     t.string   "story"
     t.string   "url"
@@ -62,10 +62,10 @@ ActiveRecord::Schema.define(:version => 20130521222544) do
 
   create_table "statuses", :force => true do |t|
     t.text     "content"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.integer  "user_id"
-    t.integer  "rank"
+    t.integer  "rank",       :default => 1
   end
 
   add_index "statuses", ["user_id"], :name => "index_statuses_on_user_id"
